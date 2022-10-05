@@ -1,17 +1,17 @@
-var saludo =alert("Hola! Soy tu lista de tareas");
+let agregarNombre = prompt("Ingresar nombre")
+    alert("El nombre ingresado es " + agregarNombre)
 
-    let nombreUsuario = prompt("Ingresa tu nombre de Usuario");
+let agregarTarea= prompt("Ingresa una tarea") 
 
-        if (nombreUsuario == "") {
-            alert("No ingresaste el nombre de usuario");
-    }
-        else {
-            alert("Nombre de usuario ingresado " + nombreUsuario);
-    }
-    
-    let tarea= prompt("Ingresa una tarea")
+    function solicitarTarea(){
+        let agregarTarea= prompt("Ingresa otra tarea")
+    } 
+        solicitarTarea(agregarTarea);
 
-        while(tarea != "terminar"){
-            console.log("Ingrasaste una tarea" + tarea);
-                tarea= prompt("Ingresa la tarea . si quieres salir escribe terminar")
-    }
+let tarea= prompt("Ingresa otra tarea")
+
+    while(tarea != "terminar"){
+        console.log("Ingrasaste una tarea" + tarea);
+            tarea= prompt("Ingresa la tarea . si quieres salir escribe terminar")
+}
+
